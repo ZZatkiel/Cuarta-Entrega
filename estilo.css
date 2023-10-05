@@ -252,76 +252,125 @@
 
 /*--------------------------------- CONTACTO----------------------------------------------------------------- */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.main-contacto{
+    background: #1c1c24;
+    color: #fff;
+    padding: 0 1.5rem;
+    height: 60rem;
+    width: 100%;
+}
+
+.content-contact{
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
+    height: 40rem;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 4rem;
+    padding: 2rem 0 2rem 0;
+    margin-bottom: 0;
+    letter-spacing: 3px;
+}
+
+.contact-form{
+    background: #17161b;
+}
+
+.content-contact{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+}
+
+.contact-form form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 2rem;
+}
+
+.contact-form form .block{
+    grid-column: 1/3;
+}
+
+.contact-form form p {
+    margin: 0;
+    padding: 1rem;
+}
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea{
+    width: 100%;
+    padding: 0.7rem;
+    border: none;
+    background: none;
+    border-bottom: solid 1px #4d4d4d ;
+    outline: none;
+    color: #fafafa;
+    transition: border-bottom 0.6s ease-out;
+}
+
+
+.contact-form form input:hover,
+.contact-form form textarea:hover{
+    border-bottom: solid 1px #850000 ;
+}
+
+.contact-form form button{
+    background: #1c1c27;
+    border: 0;
+    padding: 1rem;
+    font-size: 1.1rem;
+    transition: background 0.4s ease-out;
+}
+
+.contact-form form button:hover{
+    background: #0d0d0d;
+    color: #fafafa;
+    outline: none;
+}
+
+.contact-info{
+    background: #0d0d0f;
+    padding-top: 1rem;
+}
+
+.contact-info h4,
+.contact-info p,
+.contact-info ul{
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+.contact-info h4{
+    padding-top: 1.5rem;
+}
+
+.contact-info ul{
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info ul li{
+    padding: 0.3rem;
+}
+
+.contact-info ul i{
+    padding: 0.5rem;
+}
+
+.penultimo-p{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.ultimo-p{
+    padding-bottom: 1rem;
+}
 
 
 
@@ -522,6 +571,121 @@
     .content--banner--dos button:hover {
         transform: scale(0.97);
         filter: invert();
+    }
+
+
+
+/* CONTACTO */
+
+
+    .main-contacto{
+        background: #1c1c24;
+        color: #fff;
+        padding: 0 1.5rem;
+        height: 80rem;
+        width: 100%;
+    }
+    
+    .content-contact{
+        max-width: 1280px;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    .titulo{
+        text-align: center;
+        font-size: 4rem;
+        padding: 2rem 0 2rem 0;
+        margin-bottom: 0;
+        letter-spacing: 3px;
+    }
+    
+    .contact-form{
+        background: #17161b;
+    }
+    
+    .contact-form form{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .contact-form form .block{
+        grid-column: 1/3;
+    }
+    
+    .contact-form form p {
+        margin: 0;
+        padding: 1rem;
+    }
+    
+    .contact-form form button,
+    .contact-form form input,
+    .contact-form form textarea{
+        width: 100%;
+        padding: 0.7rem;
+        border: none;
+        background: none;
+        border-bottom: solid 1px #4d4d4d ;
+        outline: none;
+        color: #fafafa;
+        transition: border-bottom 0.6s ease-out;
+    }
+    
+    
+    .contact-form form input:hover,
+    .contact-form form textarea:hover{
+        border-bottom: solid 1px #850000 ;
+    }
+    
+    
+    
+    .contact-form form button{
+        background: #1c1c27;
+        border: 0;
+        padding: 1rem;
+        font-size: 1.1rem;
+        transition: background 0.4s ease-out;
+    }
+    
+    .contact-form form button:hover{
+        background: #0d0d0d;
+        color: #fafafa;
+        outline: none;
+    }
+    
+    .contact-info{
+        background: #0d0d0f;
+    }
+    
+    .contact-info h4,
+    .contact-info p,
+    .contact-info ul{
+        text-align: center;
+        margin: 0 0 1rem 0;
+    }
+    
+    .contact-info h4{
+        padding-top: 1.5rem;
+    }
+    
+    .contact-info ul{
+        list-style: none;
+        padding: 0;
+    }
+    
+    .contact-info ul li{
+        padding: 0.3rem;
+    }
+    
+    .contact-info ul i{
+        padding: 0.5rem;
+    }
+    
+    .ultimo-p{
+        padding-bottom: 1rem;
     }
 
 }
