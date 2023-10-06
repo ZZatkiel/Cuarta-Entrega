@@ -932,6 +932,10 @@
     }
 }
 
+    .contacto-footer{
+        margin-top: 0rem;
+    }
+
 
 /* ---------------------------------------------------------------------------------------------------- */
 
@@ -988,6 +992,14 @@
 
     .linea{
         border-top: 0px;
+    }
+
+    .plus{
+        margin-top: 5rem;
+    }
+
+    .contacto-footer{
+        margin-top: -5rem;
     }
 }
 
@@ -1172,5 +1184,9 @@
 
     .inicio-footer{
         margin-top: 30rem;
+    }
+
+    .plus{
+        margin-top: 5rem;
     }
 }
