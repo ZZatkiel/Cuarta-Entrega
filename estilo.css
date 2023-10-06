@@ -454,25 +454,37 @@
     width: 70%;
 }
 
+    /* --------------------------------------PORTAFOLIO------------------------------------------ */
 
+    /* LUGARES */
 
+    .carousel-item{
+        height: 100vh;
+    }
+    .carousel-item img{
+        object-fit: contain;
+        height: 100vh;
+    }
 
+    .portafolio h2{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        letter-spacing: 5px;
+    }
 
+    .portafolio-footer {
+        width: 100%;
+        padding: 50px;
+        background-color: #000000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    .portafolio-footer{
+        margin-top: 5rem;
+    }
 
 
 
