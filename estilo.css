@@ -252,7 +252,7 @@
 
 /*--------------------------------- CONTACTO----------------------------------------------------------------- */
 
-.main-contacto{
+.main-contacto {
     background: #1c1c24;
     color: #fff;
     padding: 0 1.5rem;
@@ -260,7 +260,7 @@
     width: 100%;
 }
 
-.content-contact{
+.content-contact {
     max-width: 1280px;
     margin-left: auto;
     margin-right: auto;
@@ -268,7 +268,7 @@
     height: 40rem;
 }
 
-.titulo{
+.titulo {
     text-align: center;
     font-size: 4rem;
     padding: 2rem 0 2rem 0;
@@ -276,23 +276,23 @@
     letter-spacing: 3px;
 }
 
-.contact-form{
+.contact-form {
     background: #17161b;
 }
 
-.content-contact{
+.content-contact {
     display: grid;
     grid-template-columns: 2fr 1fr;
 
 }
 
-.contact-form form{
+.contact-form form {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding-top: 2rem;
 }
 
-.contact-form form .block{
+.contact-form form .block {
     grid-column: 1/3;
 }
 
@@ -303,12 +303,12 @@
 
 .contact-form form button,
 .contact-form form input,
-.contact-form form textarea{
+.contact-form form textarea {
     width: 100%;
     padding: 0.7rem;
     border: none;
     background: none;
-    border-bottom: solid 1px #4d4d4d ;
+    border-bottom: solid 1px #4d4d4d;
     outline: none;
     color: #fafafa;
     transition: border-bottom 0.6s ease-out;
@@ -316,11 +316,11 @@
 
 
 .contact-form form input:hover,
-.contact-form form textarea:hover{
-    border-bottom: solid 1px #850000 ;
+.contact-form form textarea:hover {
+    border-bottom: solid 1px #850000;
 }
 
-.contact-form form button{
+.contact-form form button {
     background: #1c1c27;
     border: 0;
     padding: 1rem;
@@ -328,48 +328,130 @@
     transition: background 0.4s ease-out;
 }
 
-.contact-form form button:hover{
+.contact-form form button:hover {
     background: #0d0d0d;
     color: #fafafa;
     outline: none;
 }
 
-.contact-info{
+.contact-info {
     background: #0d0d0f;
     padding-top: 1rem;
 }
 
 .contact-info h4,
 .contact-info p,
-.contact-info ul{
+.contact-info ul {
     text-align: center;
     margin: 0 0 1rem 0;
 }
 
-.contact-info h4{
+.contact-info h4 {
     padding-top: 1.5rem;
 }
 
-.contact-info ul{
+.contact-info ul {
     list-style: none;
     padding: 0;
 }
 
-.contact-info ul li{
+.contact-info ul li {
     padding: 0.3rem;
 }
 
-.contact-info ul i{
+.contact-info ul i {
     padding: 0.5rem;
 }
 
-.penultimo-p{
+.penultimo-p {
     padding-left: 1rem;
     padding-right: 1rem;
 }
 
-.ultimo-p{
+.ultimo-p {
     padding-bottom: 1rem;
+}
+
+
+/* NOSOTROS */
+
+.main-page {
+    color: black;
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1500px;
+}
+
+.main-page div {
+    width: 50%;
+    padding: 6rem 5rem;
+}
+
+.right-page h2 {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: normal;
+    margin-bottom: 2rem;
+}
+
+.right-page h1 {
+    font-family: 'Ibarra Real Nova', serif;
+    text-align: center;
+    font-weight: 400;
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 6rem;
+    letter-spacing: .1rem;
+}
+
+.right-page {
+    margin-top: 0;
+    padding-top: 6rem;
+    max-height: 100vh;
+    height: 100vh;
+}
+
+.right-page p {
+    line-height: 1.4;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.right-page p:first-letter {
+    font-family: 'Ibarra Real Nova', serif;
+    font-size: 4.5rem;
+    float: left;
+    margin-top: .5rem;
+    margin-right: 1rem;
+    line-height: .7;
+}
+
+.left-page {
+    text-align: center;
+    margin-top: 18rem;
+}
+
+.left-page small {
+    font-style: italic;
+}
+
+.left-page img {
+    max-width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.linea {
+    border-top: 1px solid gray;
+    height: 2px;
+    padding: 0;
+    margin: 20px auto 0 auto;
+    width: 70%;
 }
 
 
@@ -440,14 +522,112 @@
 
 
 
+/* ---------------------------------------------------------------------------------------------------- */
+
+                                               /* MEDIA QUERIES */
+
+            /* 1400PX */
+
+
+@media screen and (max-width:1400px) {
+
+    .main-page {
+        color: black;
+        font-size: 0.8rem;
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        width: 100%;
+        margin: auto;
+        margin-right: auto;
+    }
+    .right-page {
+        margin-top: -85px;
+        max-height: 100vh;
+        height: 100vh;
+        font-size: 0.9rem;
+    }
+
+    .primero{
+        margin-top: -30px;
+
+    }
+    .left-page {
+        text-align: center;
+        margin-top: 7rem;
+        padding-top: 0rem;
+    }
+
+    .linea {
+        border-top: 1px solid gray;
+        height: 2px;
+        padding: 0;
+        margin: 50px auto 0 auto;
+        width: 70%;
+    }
+
+    .right-page p {
+        margin-top: -2rem;
+    }
+}
+
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+                                               /* MEDIA QUERIES */
+
+            /* 1250PX */
 
 
 
+@media screen and (max-width:1250px) {
 
+    .main-page {
+        color: black;
+        font-size: 0.7rem;
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        width: 100%;
+        margin: auto;
+        margin-right: auto;
+    }
+    .right-page {
+        margin-top: -85px;
+        max-height: 100vh;
+        height: 100vh;
+        font-size: 0.7rem;
+    }
 
-/* MEDIA QUERIES */
+    .primero{
+        margin-top: -30px;
 
-/* 1000PX */
+    }
+    .left-page {
+        text-align: center;
+        margin-top: 7rem;
+        padding-top: 0rem;
+    }
+
+    .linea {
+        border-top: 1px solid gray;
+        height: 2px;
+        padding: 0;
+        margin: 50px auto 0 auto;
+        width: 70%;
+    }
+    
+    .right-page p {
+        margin-top: -4rem;
+    }
+
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+                                               /* MEDIA QUERIES */
+
+            /* 1000PX */
 
 @media screen and (max-width:1000px) {
 
@@ -575,18 +755,18 @@
 
 
 
-/* CONTACTO */
+    /* CONTACTO */
 
 
-    .main-contacto{
+    .main-contacto {
         background: #1c1c24;
         color: #fff;
         padding: 0 1.5rem;
         height: 80rem;
         width: 100%;
     }
-    
-    .content-contact{
+
+    .content-contact {
         max-width: 1280px;
         margin-left: auto;
         margin-right: auto;
@@ -594,105 +774,158 @@
         display: grid;
         grid-template-columns: 1fr;
     }
-    
-    .titulo{
+
+    .titulo {
         text-align: center;
         font-size: 4rem;
         padding: 2rem 0 2rem 0;
         margin-bottom: 0;
         letter-spacing: 3px;
     }
-    
-    .contact-form{
+
+    .contact-form {
         background: #17161b;
     }
-    
-    .contact-form form{
+
+    .contact-form form {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
-    
-    .contact-form form .block{
+
+    .contact-form form .block {
         grid-column: 1/3;
     }
-    
+
     .contact-form form p {
         margin: 0;
         padding: 1rem;
     }
-    
+
     .contact-form form button,
     .contact-form form input,
-    .contact-form form textarea{
+    .contact-form form textarea {
         width: 100%;
         padding: 0.7rem;
         border: none;
         background: none;
-        border-bottom: solid 1px #4d4d4d ;
+        border-bottom: solid 1px #4d4d4d;
         outline: none;
         color: #fafafa;
         transition: border-bottom 0.6s ease-out;
     }
-    
-    
+
+
     .contact-form form input:hover,
-    .contact-form form textarea:hover{
-        border-bottom: solid 1px #850000 ;
+    .contact-form form textarea:hover {
+        border-bottom: solid 1px #850000;
     }
-    
-    
-    
-    .contact-form form button{
+
+
+
+    .contact-form form button {
         background: #1c1c27;
         border: 0;
         padding: 1rem;
         font-size: 1.1rem;
         transition: background 0.4s ease-out;
     }
-    
-    .contact-form form button:hover{
+
+    .contact-form form button:hover {
         background: #0d0d0d;
         color: #fafafa;
         outline: none;
     }
-    
-    .contact-info{
+
+    .contact-info {
         background: #0d0d0f;
     }
-    
+
     .contact-info h4,
     .contact-info p,
-    .contact-info ul{
+    .contact-info ul {
         text-align: center;
         margin: 0 0 1rem 0;
     }
-    
-    .contact-info h4{
+
+    .contact-info h4 {
         padding-top: 1.5rem;
     }
-    
-    .contact-info ul{
+
+    .contact-info ul {
         list-style: none;
         padding: 0;
     }
-    
-    .contact-info ul li{
+
+    .contact-info ul li {
         padding: 0.3rem;
     }
-    
-    .contact-info ul i{
+
+    .contact-info ul i {
         padding: 0.5rem;
     }
-    
-    .ultimo-p{
+
+    .ultimo-p {
         padding-bottom: 1rem;
     }
 
+    /* NOSOTROS */
+
+    .main-page {
+        color: black;
+        font-size: 0.8rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: auto;
+        margin-right: auto;
+    }
+    .right-page {
+        margin-top: -85px;
+        max-height: 100vh;
+        height: 100vh;
+        font-size: 0.8rem;
+    }
+
+    .primero{
+        margin-top: -30px;
+
+    }
+    .left-page {
+        text-align: center;
+        margin-top: 7rem;
+        padding-top: 0rem;
+    }
+
+    .linea {
+        border-top: 1px solid gray;
+        height: 2px;
+        padding: 0;
+        margin: 50px auto 0 auto;
+        width: 70%;
+    }
+
+    .right-page p {
+        margin-top: -2rem;
+    }
+
+    .main-page div {
+        width: 50%;
+        padding: 6rem 0rem;
+        padding-top: 0rem;
+    }
+
+    .inicio-footer{
+        margin-top: 15rem;
+    }
 }
 
-/* MEDIA QUERIES */
 
-/* 800PX */
+/* ---------------------------------------------------------------------------------------------------- */
+
+                                               /* MEDIA QUERIES */
+
+            /* 800PX */
 
 @media screen and (max-width:800px) {
 
@@ -724,19 +957,34 @@
     .container-img .box-img:nth-child(1) {
         display: none;
     }
+
     .container-img .box-img:nth-child(3) {
         display: none;
     }
+
     .container-img .box-img:nth-child(4) {
         display: none;
     }
 
+    .inicio-footer{
+        margin-top: 30rem;
+    }
+
+    .left-page{
+        visibility: hidden;
+    }
+
+    .linea{
+        border-top: 0px;
+    }
 }
 
 
-/* MEDIA QUERIES */
+/* ---------------------------------------------------------------------------------------------------- */
 
-/* 600PX */
+                                               /* MEDIA QUERIES */
+
+            /* 600PX */
 
 
 @media screen and (max-width:600px) {
@@ -897,16 +1145,20 @@
     .container-img .box-img:nth-child(1) {
         display: none;
     }
+
     .container-img .box-img:nth-child(2) {
         display: none;
     }
+
     .container-img .box-img:nth-child(3) {
         display: none;
     }
+
     .container-img .box-img:nth-child(4) {
         display: none;
     }
 
-
-
+    .inicio-footer{
+        margin-top: 30rem;
+    }
 }
